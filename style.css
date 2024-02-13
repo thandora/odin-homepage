@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero */
+.about-me-container {
+  max-width: 1000px;
+  padding: 20px 24px;
+}
+
+.portrait {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  float: left;
+}
+
+.hero-text {
+  font-family: "Playfair Display", serif;
+  background-color: rgb(198, 202, 201);
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+}
