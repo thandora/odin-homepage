@@ -13,6 +13,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #efefef;
+  color: gray;
+}
+
+h2,
+h3 {
+  color: black;
 }
 
 /* Hero */
@@ -21,22 +28,48 @@ body {
   padding: 20px 24px;
 }
 
-.portrait {
-  width: 280px;
-  height: 300px;
-  object-fit: cover;
+.portrait-container {
+  position: relative;
+  box-shadow: 2px 6px 6px rgba(65, 59, 59, 0.397);
   float: left;
 }
 
+.portrait {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+
+  /* This took too long to fix. Because of how img is rendered as an inline-block
+  on screen, which causes this parent element to have a height more than the child img.
+  This fixes it */
+  display: block;
+  /* Setting line-height: 0 on the parent div (.portrait-container) also fixes this issue */
+}
+
+.portrait-name {
+  color: #efefef;
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  margin: 0;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0px rgb(73, 73, 73);
+}
+
 .hero-text {
+  margin: 25px;
+  padding: 2rem;
   font-family: "Playfair Display", serif;
-  background-color: rgb(198, 202, 201);
+  background-color: #efefef;
+  box-shadow: 2px 6px 6px rgba(65, 59, 59, 0.397);
 }
 
 .hero-text h2 {
   font-size: 2rem;
+  margin: 0;
 }
 
 .hero-text p {
+  padding: 2rem;
   font-size: 1.1rem;
 }
