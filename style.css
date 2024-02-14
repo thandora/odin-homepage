@@ -25,7 +25,7 @@ h3 {
 
 /* Hero section */
 .hero {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-image: url(assets/bg.png);
@@ -138,6 +138,11 @@ h3 {
   background-color: rgb(109, 168, 50);
 }
 
+.works .fake-final {
+  color: black;
+  background-image: radial-gradient(#e66465, #9198e5);
+}
+
 .works .details {
   padding: 12px;
 }
@@ -148,6 +153,7 @@ h3 {
 
 .works .title {
   margin: 0;
+  font-family: "Playfair Display", serif;
 }
 
 .works .work-links {
@@ -164,4 +170,44 @@ h3 {
 .works .work-links i {
   font-size: 22px;
   color: black;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  /* width: 100vw; */
+  width: 100%;
+  background-color: #0598c9;
+  color: #efefef;
+}
+
+footer .container {
+  padding: 32px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  column-gap: 40px;
+  flex-basis: 1000px;
+  max-width: 1000px;
+  justify-content: center;
+}
+
+footer .details {
+  min-width: 250px;
+  max-width: 350px;
+  flex: 30%;
+}
+
+footer h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: #efefef;
+  margin-top: 0;
+}
+
+footer .contact-image {
+  flex: 60%;
+  width: 250px;
+  height: auto;
 }
