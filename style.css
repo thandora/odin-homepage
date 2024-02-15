@@ -194,9 +194,9 @@ footer .container {
 }
 
 footer .details {
+  flex: 2;
   min-width: 250px;
   max-width: 350px;
-  flex: 30%;
 }
 
 footer h2 {
@@ -206,8 +206,26 @@ footer h2 {
   margin-top: 0;
 }
 
-footer .contact-image {
-  flex: 60%;
-  width: 250px;
-  height: auto;
+footer .contact-image-container {
+  flex: 3;
+  max-height: 300px;
+  max-width: 407px;
+}
+
+footer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Breakpoints */
+@media (max-width: 894px) {
+
+  /* Works section */
+  .works {
+    align-items: center;
+  }
+
+  footer .contact-image-container {
+    max-width: 201px;
+  }
 }
