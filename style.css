@@ -20,6 +20,7 @@ body {
 
 h2,
 h3 {
+  font-family: "Playfair Display", serif;
   color: black;
 }
 
@@ -63,7 +64,9 @@ h3 {
   left: 8px;
   margin: 0;
   font-size: 2rem;
+  font-weight: 400;
   text-shadow: 1px 1px 0px rgb(73, 73, 73);
+  white-space: nowrap;
 }
 
 .hero-text {
@@ -219,13 +222,22 @@ footer img {
 
 /* Breakpoints */
 @media (max-width: 894px) {
-
-  /* Works section */
-  .works {
-    align-items: center;
-  }
-
   footer .contact-image-container {
     max-width: 201px;
+  }
+}
+
+@media (max-width: 800px) {
+  .portrait-name {
+    font-size: 2.5rem;
+    bottom: 270px;
+    left: 230px;
+  }
+
+  .hero .hero-text {
+    margin: 60px;
+    margin-top: 90px;
+    margin-bottom: 25px;
+    padding-top: 40px;
   }
 }
